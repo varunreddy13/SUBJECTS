@@ -1,0 +1,70 @@
+/* Sample style sheet */
+
+h1 { color:green;}
+p { background:lightblue; font-family:Times;}
+#special { background:lightpink; font-family:Arial; font-size:20}
+.code { font-family:'Courier New', Courier, monospace; 
+    background:black; color:limegreen} 
+
+
+table { border: dashed 3px;
+    overflow: auto;
+    border-collapse: separate;}
+table.collapsing { border: solid 3px;
+    border-collapse: collapse;
+    outline: solid 2px lightcoral;}
+td, th {border: solid 1px;
+    text-align: center;}
+tr {background-color:rgb(137, 211, 134) ;}
+tr:nth-child(even) {background-color: #e2e2e2;}
+
+
+  
+  /* CSS combinator uses space here... 
+     We select any anchor that is a descendant of 
+     an appropriate ul used as a navbar.
+     */
+    ul.navbar-vertical {
+      /* remove these */
+      list-style-type: none;
+      margin: 0;
+      padding 0;
+      
+      width:70px;
+      background-color:red;
+    }
+    
+    ul.navbar-vertical a {
+      display: block; /* all is clickable */
+      color:#000;
+    }
+    /* on hover change the link color*/
+    ul.navbar-vertical a:hover {  
+      background-color: #555;
+      color:white;
+    }
+    
+    ul.navbar-horizontal {
+      /* remove these */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    
+    }
+    
+    ul.navbar-horizontal li {
+      float:left;/* line up horizontally */
+      color:#000;
+      background-color:blueviolet;
+    }
+    
+    ul.navbar-horizontal a {
+      display:block;
+      padding:8px
+    }
+    
+    /* on hover change the link color*/
+    ul.navbar-horizontal li a:hover {  
+      background-color: #555;
+      color:white;
+    }

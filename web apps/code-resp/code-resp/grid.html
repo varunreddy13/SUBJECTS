@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .my-header{grid-area: header;}
+       .my-menu{grid-area: menu;}
+       .my-main{grid-area: main;}
+       .my-right-bar{grid-area: right;}
+       .my-footer{grid-area: footer;}
+       
+
+       .grid-container{
+
+        display: grid;
+        grid-template-areas: 
+        'header''header''header''header''header'
+        'menu main main main right '
+        'menu main main main right '
+        'footer''footer''footer''footer''footer';
+        grid-gap: 10px;
+        background-color: rgba(255, 174, 255, 0.8);
+        padding: 10px;
+       }
+
+       .grid-container> div {
+        background-color: rgba(255, 255, 255, 0.8);
+         text-align: center;
+         padding: 20px 0;
+        font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        hello
+    </h1>
+<div class="grid-container">
+
+    <div class="my-header">Header</div>
+    <div class="my-menu">menu</div>
+    <div class="my-main">main</div>
+    <div class="my-right-bar">rightfghj</div>
+    <div class="my-footer">footer</div>
+    
+</div>
+
+</body>
+</html>

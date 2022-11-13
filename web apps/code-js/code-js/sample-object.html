@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+
+<h2>Working with an object</h2>
+
+<button type="button"
+onclick="play()">
+Click me to run the javascript.</button>
+
+<p> Results are being written to the console log</p>
+<p id="show"> And overwriting here</p>
+
+<script> function play() {
+    
+    let my_object =  {id:1, name:"Fred", wages:2.45, isHappy:true}
+    document.getElementById('show').innerHTML = "my_object is " + my_object
+    console.log(my_object)
+
+    my_object.name = "Chuck"
+    document.getElementById('show').innerHTML = "my_object is " + my_object
+    console.log(my_object)
+
+    my_object.song = "Fly me to the moon"
+    document.getElementById('show').innerHTML = "my_object is " + my_object
+    console.log(my_object)
+
+    document.getElementById('show').innerHTML = "property oops " + my_object.oops
+    console.log(my_object.oops)
+}
+</script>
+
+</body>
+</html> 

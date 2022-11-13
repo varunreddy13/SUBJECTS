@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><body>
+
+<h2>Time & Data</h2>
+
+<button type="button"
+onclick="dateClick()">
+Click me to display Date and Time.</button>
+
+<p id="demo">This text will be replaced </p>
+
+<script> 
+function dateClick() {
+    document.getElementById('demo').innerHTML = Date();
+    alert('date fetched')
+}
+</script>
+
+</body></html> 

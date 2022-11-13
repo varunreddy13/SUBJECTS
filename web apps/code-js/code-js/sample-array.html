@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+
+<h2>Working with arrays</h2>
+
+<button type="button"
+onclick="play()">
+Click me to run the javascript.</button>
+
+<p> Results are being written to the console log</p>
+<p id="show"> And overwriting here</p>
+
+<script> function play() {
+    
+    let my_array = ['a', 'b','c','d']
+
+    document.getElementById('show').innerHTML = "my_array " + my_array
+    console.log(my_array)
+
+    my_array[5]="non contiguous"
+    my_array[1]=undefined
+
+    document.getElementById('show').innerHTML = "my_array " + my_array
+    console.log(my_array)
+
+    document.getElementById('show').innerHTML = "length is  " + my_array.length
+    console.log(my_array.length)
+
+    document.getElementById('show').innerHTML = "my_array sorted" + my_array.sort()
+    console.log(my_array.sort())
+
+    for(i=0; i<my_array.length; i++){
+        console.log(my_array[i])
+    }
+
+    /* This is an example of a functional */
+    my_array.forEach(showConsole);
+    function showConsole(value){
+        console.log(value)
+    }
+
+    
+
+
+
+   
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+
+<h2>Sum/Product</h2>
+
+<button type="button"
+onclick="loopClick()">
+Click me to compute the sum and product of values from 1 to 1000.</button>
+
+<p id="demo">This text will be replaced </p>
+
+<script> function dateClick() {
+    let sum = 0
+    let product = 1
+    for (let count = 1; count <= 1000; count++) {
+       sum += count
+       product *= count
+    }
+    document.getElementById('demo').innerHTML = "Sum is " + sum + " product is " + product;
+}
+</script>
+
+</body>
+</html> 
